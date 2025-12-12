@@ -1,0 +1,31 @@
+:root{
+  --bg:#0f1724; /* dark slate */
+  --panel:#0b1220;
+  --muted:#94a3b8;
+  --accent:#3b82f6; /* blue-500 */
+  --accent-2:#06b6d4; /* cyan */
+}
+
+.header{
+  position:fixed;top:0;left:0;width:100%;z-index:50;background:rgba(8,12,18,0.9);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,0.03);
+}
+
+.header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;}
+
+.brand{color:#e6eef8;font-weight:700;text-decoration:none;font-size:18px}
+.brand-accent{color:var(--accent)}
+
+.nav-desktop{display:none}
+.nav-link{color:var(--muted);margin-left:18px;text-transform:capitalize;text-decoration:none}
+.nav-link:hover{color:var(--accent)}
+
+.nav-toggle{background:transparent;border:none;color:#e6eef8;font-size:20px;display:inline-flex;align-items:center}
+
+.nav-mobile{padding:12px 20px;display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,0.02);}
+.nav-mobile-link{padding:10px 0;color:var(--muted);text-decoration:none;text-transform:capitalize}
+.nav-mobile-link:hover{color:var(--accent)}
+
+@media(min-width:768px){
+  .nav-desktop{display:flex;align-items:center}
+  .nav-toggle{display:none}
+}

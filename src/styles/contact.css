@@ -1,0 +1,18 @@
+:root{--card:#07101a;--muted:#94a3b8;--accent:#3b82f6}
+.contact{padding:60px 20px;background:#0b1220;color:#e6eef8;width: 100%;}
+.contact-inner{max-width:1100px;margin:0 auto}
+.section-title{font-size:32px;text-align:center;margin-bottom:24px;color:var(--accent)}
+.contact-grid{display:grid;grid-template-columns:1fr;gap:24px}
+.contact-info{background:var(--card);padding:18px;border-radius:12px}
+.contact-row{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.ci-icon{font-size:18px;color:var(--accent);}
+.muted{color:var(--muted);font-size:13px;margin:0}
+.contact-link{display:block;color:#e6eef8;text-decoration:none}
+
+.contact-form{background:var(--card);padding:18px;border-radius:12px;display:flex;flex-direction:column;gap:12px}
+.contact-form input,
+.contact-form textarea{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px;border-radius:8px;color:#e6eef8;outline:none}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#94a3b8}
+.btn.full{width:100%}
+
+@media(min-width:992px){.contact-grid{grid-template-columns:380px 1fr}}

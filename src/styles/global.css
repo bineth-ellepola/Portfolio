@@ -1,19 +1,30 @@
-/* Centers all content like Tailwind container mx-auto */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 16px;
+/* ===== CSS RESET ===== */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-/* Optional: Smooth scrolling like Tailwind */
-html {
-  scroll-behavior: smooth;
+/* ===== BODY FIX ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* 🔥 THIS FIXES LEFT SHIFT */
+  background-color: #0f172a;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Background for whole site */
+/* ===== APP WRAPPER ===== */
 .app-wrapper {
-  background-color: #0f172a; /* slate-900 */
+  width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== REUSABLE CONTAINER ===== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
